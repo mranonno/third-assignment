@@ -1,58 +1,96 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockey's</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-<style>
-    .primary-font{
-        font-family: 'Manrope', sans-serif;
-    }
-</style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .primary-font {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
+    <header class="container mx-auto px-5 lg:px-32">
         <!-- Nav Section -->
-        <nav class="container mx-auto px-5 lg:px-32 py-5 lg:py-12">
+        <nav class="py-5 lg:py-12">
             <div class="navbar flex justify-center items-center">
                 <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="lg:hidden mr-2">
+                            <img src="./Icons/Frame menu.png" alt="">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 left-1">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
                     </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 left-5">
-                      <li><a>Home</a></li>
-                      <li><a>About</a></li>
-                      <li><a>Pages</a></li>
-                      <li><a>Blog</a></li>
-                      <li><a>Contact</a></li>
-                    </ul>
-                  </div>
-                  <a class="lg:text-4xl text-2xl font-extrabold text-slate-950">Hockey<span class="text-red-500">'</span>s</a>
+                    <a class="lg:text-4xl text-2xl font-extrabold text-slate-950">Hockey<span
+                            class="text-red-500">'</span>s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1 text-gray-600">
-                    <li><a><span class="text-red-500">Home</span></a></li>
-                      <li><a>About</a></li>
-                      <li><a>Pages</a></li>
-                      <li><a>Blog</a></li>
-                      <li><a>Contact</a></li>
-                  </ul>
+                    <ul class="menu menu-horizontal px-1 text-gray-600">
+                        <li><a><span class="text-red-500">Home</span></a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
                 </div>
                 <div class="navbar-end space-x-5">
                     <button class="hidden lg:flex"><img src="./Icons/search.png" alt=""></button>
-                  <button class="bg-red-500 lg:text-xl text-lg font-bold text-white py-2 lg:py-4 px-6 rounded-lg">Get Ticket</button>
-                </div> 
+                    <button class="bg-red-500 lg:text-xl text-lg font-bold text-white py-2 lg:py-4 px-6 rounded-lg">Get
+                        Ticket</button>
+                </div>
             </div>
         </nav>
         <!-- Slide Section -->
-        <section>
-            
+        <section class="relative">
+            <div class="carousel w-full h-56 lg:h-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="./Images/banner1.png" class="w-full" />
+                    <div class="absolute flex gap-4 transform lg:left-7 lg:bottom-7 left-[42%] bottom-3">
+                        <a href="#slide3" class="lg:w-10 w-7"><img src="./Icons/left arrow.png" alt=""></a>
+                        <a href="#slide2" class="lg:w-10 w-7"><img src="./Icons/right arrow.png" alt=""></a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./Images/banner2.png" class="w-full rounded-xl" />
+                    <div class="absolute flex gap-4 transform lg:left-7 lg:bottom-7 left-[42%] bottom-3">
+                        <a href="#slide1" class="lg:w-10 w-7"><img src="./Icons/left arrow.png" alt=""></a>
+                        <a href="#slide3" class="lg:w-10 w-7"><img src="./Icons/right arrow.png" alt=""></a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="./Images/banner3.png" class="w-full rounded-xl" />
+                    <div class="absolute flex gap-4 transform lg:left-7 lg:bottom-7 left-[42%] bottom-3">
+                        <a href="#slide2" class="lg:w-10 w-7"><img src="./Icons/left arrow.png" alt=""></a>
+                        <a href="#slide1" class="lg:w-10 w-7"><img src="./Icons/right arrow.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:absolute lg:w-[566px] right-8 bottom-8 mt-3">
+                <div class="bg-black rounded-xl text-white p-8">
+                    <h3 class="lg:text-2xl text-lg font-extrabold">Meet all the heroes from the field</h3>
+                    <p class="font-medium opacity-50 leading-7">Pioneering physicist and chemist, known for her research on and the discovery of radium and
+                        polonium.</p>
+                </div>
+            </div>
         </section>
     </header>
     <main>
@@ -62,4 +100,5 @@
 
     </footer>
 </body>
+
 </html>

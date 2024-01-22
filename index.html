@@ -15,11 +15,15 @@
         .primary-font {
             font-family: 'Manrope', sans-serif;
         }
+
+        .title-color {
+            color: #131318;
+        }
     </style>
 </head>
 
-<body>
-    <header class="container mx-auto px-5 lg:px-32">
+<body class="container mx-auto px-5 lg:px-32 primary-font">
+    <header>
         <!-- Nav Section -->
         <nav class="py-5 lg:py-12">
             <div class="navbar flex justify-center items-center">
@@ -27,8 +31,8 @@
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="lg:hidden mr-2">
                             <img src="./Icons/Frame menu.png" alt="">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
                         </div>
                         <ul tabindex="0"
@@ -40,7 +44,7 @@
                             <li><a>Contact</a></li>
                         </ul>
                     </div>
-                    <a class="lg:text-4xl text-2xl font-extrabold text-slate-950">Hockey<span
+                    <a class="lg:text-4xl text-2xl font-extrabold title-color">Hockey<span
                             class="text-red-500">'</span>s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
@@ -87,14 +91,45 @@
             <div class="lg:absolute lg:w-[566px] right-8 bottom-8 mt-3">
                 <div class="bg-black rounded-xl text-white p-8">
                     <h3 class="lg:text-2xl text-lg font-extrabold">Meet all the heroes from the field</h3>
-                    <p class="font-medium opacity-50 leading-7">Pioneering physicist and chemist, known for her research on and the discovery of radium and
+                    <p class="font-medium opacity-50 leading-7">Pioneering physicist and chemist, known for her research
+                        on and the discovery of radium and
                         polonium.</p>
                 </div>
             </div>
         </section>
     </header>
     <main>
-
+        <!-- Professional Hockeys Club -->
+        <section>
+            <hr class="lg:mt-24 mt-12 lg:mb-8 mb-6 border-dashed border-[1px]">
+            <div class="text-center lg:space-y-6 space-y-4">
+                <h3 class="title-color lg:text-4xl text-2xl font-extrabold">Professional Hockeys Club</h3>
+                <p class="title-color opacity-60 leading-7">Montreal Canadiens: Historic NHL team, numerous championships, passionate fan base, iconic in hockey's rich legacy.</p>
+            </div>
+            <hr class="mt-6 border-dashed border-[1px]">
+            <div class="text-center flex flex-col lg:flex-row mt-12 gap-8 justify-center">
+                <div>
+                    <div class="radial-progress text-red-500" style="--value:87;" role="progressbar">87%</div>
+                    <h3 class="title-color text-xl font-semibold mt-6">Prayer Facility</h3>
+                    <p class="title-color opacity-60 leading-7 mt-2">Iconic NHL team with rich history, <br>championship victories.</p>
+                </div>
+                <div>
+                    <div class="radial-progress text-emerald-400" style="--value:95;" role="progressbar">95%</div>
+                    <h3 class="title-color text-xl font-semibold mt-6">Experienced Coach</h3>
+                    <p class="title-color opacity-60 leading-7 mt-2">Iconic NHL team with rich history, <br>championship victories.</p>
+                </div>
+                <div>
+                    <div class="radial-progress text-yellow-400" style="--value:90;" role="progressbar">90%</div>
+                    <h3 class="title-color text-xl font-semibold mt-6">Senior Player</h3>
+                    <p class="title-color opacity-60 leading-7 mt-2">Iconic NHL team with rich history, <br>championship victories.</p>
+                </div>
+                <div>
+                    <div class="radial-progress text-blue-500" style="--value:80;" role="progressbar">80%</div>
+                    <h3 class="title-color text-xl font-semibold mt-6">Training Ground</h3>
+                    <p class="title-color opacity-60 leading-7 mt-2"> Iconic NHL team with rich history, <br>championship victories.</p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 

@@ -26,8 +26,8 @@
     </style>
 </head>
 
-<body class="container mx-auto px-5 lg:px-32 primary-font">
-    <header>
+<body class="container mx-auto primary-font">
+    <header class="px-5 lg:px-32">
         <!-- Nav Section -->
         <nav class="py-5 lg:py-12">
             <div class="navbar flex justify-center items-center">
@@ -102,7 +102,7 @@
             </div>
         </section>
     </header>
-    <main>
+    <main class="px-5 lg:px-32">
         <!-- Professional Hockeys Club -->
         <section>
             <hr class="lg:mt-24 mt-12 lg:mb-8 mb-6 border-dashed border-[1px]">
@@ -116,25 +116,25 @@
             <hr class="mt-6 border-dashed border-[1px]">
             <div class="text-center flex flex-col lg:flex-row mt-12 gap-8 justify-center">
                 <div>
-                    <div class="radial-progress text-red-500" style="--value:87;" role="progressbar">87%</div>
+                    <div class="radial-progress text-red-500" style="--value:87;" role="progressbar"><span class="text-black">87%</span></div>
                     <h3 class="title-color text-xl font-semibold lg:mt-6 mt-4">Prayer Facility</h3>
                     <p class="title-color opacity-60 leading-7 mt-2">Iconic NHL team with rich history, <br>championship
                         victories.</p>
                 </div>
                 <div>
-                    <div class="radial-progress text-emerald-400" style="--value:95;" role="progressbar">95%</div>
+                    <div class="radial-progress text-emerald-400" style="--value:95;" role="progressbar"><span class="text-black">95%</span></div>
                     <h3 class="title-color text-xl font-semibold lg:mt-6 mt-4">Experienced Coach</h3>
                     <p class="title-color opacity-60 leading-7 mt-2">Iconic NHL team with rich history, <br>championship
                         victories.</p>
                 </div>
                 <div>
-                    <div class="radial-progress text-yellow-400" style="--value:90;" role="progressbar">90%</div>
+                    <div class="radial-progress text-yellow-400" style="--value:90;" role="progressbar"><span class="text-black">90%</span></div>
                     <h3 class="title-color text-xl font-semibold lg:mt-6 mt-4">Senior Player</h3>
                     <p class="title-color opacity-60 leading-7 mt-2">Iconic NHL team with rich history, <br>championship
                         victories.</p>
                 </div>
                 <div>
-                    <div class="radial-progress text-blue-500" style="--value:80;" role="progressbar">80%</div>
+                    <div class="radial-progress text-blue-500" style="--value:80;" role="progressbar"><span class="text-black">80%</span></div>
                     <h3 class="title-color text-xl font-semibold lg:mt-6 mt-4">Training Ground</h3>
                     <p class="title-color opacity-60 leading-7 mt-2"> Iconic NHL team with rich history,
                         <br>championship victories.
@@ -450,55 +450,121 @@
             </div>
             <hr class="mt-6 border-dashed border-[1px]">
             <div class="lg:flex justify-between items-center mt-12 gap-8 space-y-4">
-                <div class="space-y-4 border lg:px-12 lg:py-12 p-5 rounded-lg">
-                    <div class="bg-[#BCED6D1A] rounded-xl py-8 pl-8 pr-28">
+                <div class="space-y-6 border lg:px-12 lg:py-12 p-5 rounded-xl">
+                    <div class="bg-[#BCED6D1A] rounded-xl py-10 pl-8 lg:pr-24">
                         <img src="./Icons/Group cal.png" alt="">
                         <p class="title-color opacity-40 leading-8">Phone Number</p>
                         <h3 class="text-lg font-bold leading-8">(+62) 123-321-543</h3>
                     </div>
-                    <div class="bg-[#FDDD5F1A] rounded-xl py-8 pl-8 pr-28">
+                    <div class="bg-[#FDDD5F1A] rounded-xl py-8 pl-8 lg:pr-24">
                         <img src="./Icons/Group mail.png" alt="">
                         <p class="title-color opacity-40 leading-8">Email</p>
                         <h3 class="text-lg font-bold leading-8">hockeys@support.com</h3>
                     </div>
-                    <div class="bg-[#629CF31A] rounded-xl py-8 pl-8 pr-28">
+                    <div class="bg-[#629CF31A] rounded-xl py-8 pl-8 lg:pr-24">
                         <img src="./Icons/Group map.png" alt="">
                         <p class="title-color opacity-40 leading-8">Location</p>
                         <h3 class="text-lg font-bold leading-8">152/1 Mohakhali Wireless Gate</h3>
                     </div>
                 </div>
-                <div class="lg:grid grid-cols-2 gap-6 lg:w-[58%]">
-                    <div class="space-y-1">
+                <div class="lg:grid grid-cols-2 gap-6 lg:w-[58%] space-y-5 lg:space-y-0">
+                    <div class="space-y-2">
                         <h3 class="lg:text-xl text-lg font-bold title-color">Your Name</h3>
-                        <input class="py-5 px-4 w-full rounded-lg bg-[#13131808]" type="text"
+                        <input class="py-5 px-4 w-full rounded-xl bg-[#13131808]" type="text"
                             placeholder="Enter your full name">
                     </div>
-                    <div class="space-y-1">
+                    <div class="space-y-2">
                         <h3 class="lg:text-xl text-lg font-bold title-color">Your Email</h3>
-                        <input class="py-5 px-4 w-full rounded-lg bg-[#13131808]" type="email" name="" id="" placeholder="Enter your email">
+                        <input class="py-5 px-4 w-full rounded-xl bg-[#13131808]" type="email" name="" id=""
+                            placeholder="Enter your email">
                     </div>
-                    <div class="space-y-1">
+                    <div class="space-y-2">
                         <h3 class="lg:text-xl text-lg font-bold title-color">Subject</h3>
-                        <input class="py-5 px-4 w-full rounded-lg bg-[#13131808]" type="text" placeholder="Enter your subject">
+                        <input class="py-5 px-4 w-full rounded-xl bg-[#13131808]" type="text"
+                            placeholder="Enter your subject">
                     </div>
-                    <div class="space-y-1">
+                    <div class="space-y-2">
                         <h3 class="lg:text-xl text-lg font-bold title-color">Phone Number</h3>
-                        <input class="py-5 px-4 w-full rounded-lg bg-[#13131808]" type="text" placeholder="Enter your phone number">
+                        <input class="py-5 px-4 w-full rounded-xl bg-[#13131808]" type="text"
+                            placeholder="Enter your phone number">
                     </div>
-                    <div class=" col-span-2 space-y-1">
+                    <div class=" col-span-2 space-y-2">
                         <h3 class="lg:text-xl text-lg font-bold title-color">Message</h3>
-                        <textarea placeholder="Write your message..." class="bg-[#13131808] w-full p-4 rounded-lg resize-none" rows="10"></textarea>
+                        <textarea placeholder="Write your message..."
+                            class="bg-[#13131808] w-full p-4 rounded-xl resize-none" rows="10"></textarea>
                     </div>
                     <div class="col-span-2">
-                        <button class="py-5 mt-4 btn-color rounded-lg w-full text-white">Send Message</button>
+                        <button class="py-5 mt-4 btn-color rounded-xl w-full text-xl font-bold text-white">Send
+                            Message</button>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Social media  -->
+        <section>
+            <div class="bg-[#13131808] flex flex-col gap-5 py-9 rounded-xl justify-center items-center mt-12">
+                <div>
+                    <h3 class="text-2xl font-extrabold title-color">Social Media</h3>
+                </div>
+                <div>
+                    <div class="gap-8 flex items-center">
+                        <img class="w-7" src="./Icons/facebook.svg" alt="">
+                        <img class="w-7" src="./Icons/twitter-icon.png" alt="">
+                        <img class="w-7" src="./Icons/black-instagram-icon.png" alt="">
+                        <img class="w-7" src="Icons/github-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-
+    <footer class="bg-black mt-24">
+        <!-- Footer -->
+        <section>
+            <div
+                class="lg:flex justify-between text-center lg:text-start px-5 lg:px-32 py-10 lg:py-24 text-white space-y-8">
+                <div>
+                    <h3 class="lg:text-3xl text-2xl font-extrabold">Get In Touch</h3>
+                    <p class="opacity-60 font-medium leading-7 mt-5">Contact me swiftly. Fast, efficient
+                        <br>communication.
+                        Ready to connect. Reach <br>out now.Let's collaborate seamlessly.</p>
+                    <h4 class="flex items-center justify-center lg:justify-start gap-4 opacity-80 cursor-pointer mt-5">
+                        <img src="./Icons/Mail.png" alt="">hockeys@support.com</h4>
+                    <h4 class="flex justify-center lg:justify-start items-center gap-4 opacity-80 cursor-pointer mt-4">
+                        <img src="./Icons/Call.png" alt="">(+62) 123-321-543</h4>
+                </div>
+                <div class="flex gap-10 lg:gap-48 justify-center items-start">
+                    <div>
+                        <header class="text-lg font-bold">Company</header>
+                        <ul class="opacity-60 font-medium leading-10 cursor-pointer">
+                            <li><a>About us</a></li>
+                            <li><a>Leadership</a></li>
+                            <li><a>Careers</a></li>
+                            <li><a>News & Article</a></li>
+                            <li><a>Legal Notice</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <header class="text-lg font-bold">Support</header>
+                        <ul class="opacity-60 font-medium leading-10 cursor-pointer">
+                            <li><a>Help Center</a></li>
+                            <li><a>FAQ</a></li>
+                            <li><a>Ticket Support</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <header class="text-lg font-bold">Services</header>
+                    <ul class="opacity-60 font-medium leading-10 cursor-pointer">
+                        <li><a>Academy</a></li>
+                        <li><a>Group Lesson</a></li>
+                        <li><a>Private Lesson</a></li>
+                        <li><a>Hockeys for kids</a></li>
+                        <li><a>Hockeys for Adult</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </footer>
 </body>
 
